@@ -1,0 +1,51 @@
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+$text-color: black;
+$link-color: #3c6997;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#main {
+  text-align: center;
+
+  margin: {
+    top: 3em;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  margin: {
+    top: 1.5em;
+    bottom: 1.5em;
+  }
+}
+
+p {
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+
+  i {
+    color: $text-color;
+  }
+}
+
+a:visited {
+  color: $link-color;
+
+  i {
+    color: $text-color;
+  }
+}
