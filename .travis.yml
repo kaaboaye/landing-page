@@ -12,6 +12,7 @@ cache:
     - node_modules
 
 deploy:
+  local-dir: dist
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
