@@ -1,0 +1,23 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf docs; parcel build src/index.html --out-dir docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaaboaye/landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaaboaye/landing-page/issues"
+  },
+  "homepage": "https://github.com/kaaboaye/landing-page#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
