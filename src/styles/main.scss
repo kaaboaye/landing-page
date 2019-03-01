@@ -20,6 +20,16 @@ body {
   }
 }
 
+#source {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+
+  i {
+    color: gray;
+  }
+}
+
 h1 {
   font-size: 2.5em;
 }
