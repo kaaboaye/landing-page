@@ -5,11 +5,18 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 
 @import "./icon-colors.scss";
 
+$background-color: white;
 $text-color: black;
 $link-color: #3c6997;
 
+$dark-background-color: black;
+$dark-text-color: white;
+$dark-link-color: #9ad1fd;
+
 body {
   font-family: "Roboto", sans-serif;
+  background-color: $background-color;
+  color: $text-color;
 }
 
 #main {
@@ -59,5 +66,28 @@ a:visited {
 
   i {
     color: $text-color;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $dark-background-color;
+    color: $dark-text-color;
+  }
+
+  a {
+    color: $dark-link-color;
+
+    i {
+      color: $dark-text-color;
+    }
+  }
+
+  a:visited {
+    color: $dark-link-color;
+
+    i {
+      color: $dark-text-color;
+    }
   }
 }
