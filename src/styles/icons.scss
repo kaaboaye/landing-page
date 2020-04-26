@@ -11,12 +11,18 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/_rotated-flipped";
 @import "~@fortawesome/fontawesome-free/scss/_stacked";
 
+.#{$fa-css-prefix}-code:before {
+  content: fa-content($fa-var-code);
+}
+
 .#{$fa-css-prefix}-envelope:before {
   content: fa-content($fa-var-envelope);
 }
+
 .#{$fa-css-prefix}-github:before {
   content: fa-content($fa-var-github);
 }
+
 .#{$fa-css-prefix}-linkedin:before {
   content: fa-content($fa-var-linkedin);
 }
