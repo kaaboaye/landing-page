@@ -1,17 +1,20 @@
-@import "./icons.scss";
-
 $background-color: white;
 $text-color: black;
-$link-color: #3c6997;
+$secondary-text: #565656;
+$link-color: #1b6ca8;
 
 $dark-background-color: black;
 $dark-text-color: white;
+$dark-secondary-text: #989898;
 $dark-link-color: #9ad1fd;
+
+@import "./icons.scss";
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: $background-color;
   color: $text-color;
+  text-align: center;
 }
 
 .wrapper {
@@ -31,21 +34,18 @@ body {
   }
 }
 
-#main {
-  text-align: center;
-
+section {
   margin: {
     top: 3em;
   }
 }
 
-#source {
-  position: fixed;
-  top: 1em;
-  right: 1em;
+footer {
+  margin-top: 64px;
 
-  i {
-    color: gray;
+  p {
+    font-size: 12px;
+    color: #565656;
   }
 }
 
@@ -58,10 +58,11 @@ h2 {
     top: 1.5em;
     bottom: 1.5em;
   }
+  font-weight: normal;
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 18px;
 }
 
 a {
@@ -101,5 +102,9 @@ a:visited {
     i {
       color: $dark-text-color;
     }
+  }
+
+  footer p {
+    color: $dark-secondary-text;
   }
 }

@@ -11,10 +11,6 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/_rotated-flipped";
 @import "~@fortawesome/fontawesome-free/scss/_stacked";
 
-.#{$fa-css-prefix}-code:before {
-  content: fa-content($fa-var-code);
-}
-
 .#{$fa-css-prefix}-envelope:before {
   content: fa-content($fa-var-envelope);
 }
@@ -32,9 +28,10 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
-#mail {
+#mail,
+#linkedin {
   i {
-    color: #02688a;
+    color: #2083a4;
   }
 }
 
@@ -44,8 +41,17 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   }
 }
 
-#linkedin {
-  i {
-    color: #0277b5;
+@media (prefers-color-scheme: dark) {
+  #mail,
+  #linkedin {
+    i {
+      color: #53afff;
+    }
+  }
+
+  #github {
+    i {
+      color: white;
+    }
   }
 }
