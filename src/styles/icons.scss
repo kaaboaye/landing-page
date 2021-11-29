@@ -19,17 +19,12 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   content: fa-content($fa-var-github);
 }
 
-.#{$fa-css-prefix}-linkedin:before {
-  content: fa-content($fa-var-linkedin);
-}
-
 @import "~@fortawesome/fontawesome-free/scss/_screen-reader";
 
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
-#mail,
-#linkedin {
+#mail {
   i {
     color: #2083a4;
   }
@@ -42,8 +37,7 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 }
 
 @media (prefers-color-scheme: dark) {
-  #mail,
-  #linkedin {
+  #mail {
     i {
       color: #53afff;
     }
