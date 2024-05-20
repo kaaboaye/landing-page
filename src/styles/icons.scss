@@ -1,24 +1,19 @@
 $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 
+@import "~@fortawesome/fontawesome-free/scss/_functions";
 @import "~@fortawesome/fontawesome-free/scss/_variables";
+
+$fa-icons: (
+  "envelope": $fa-var-envelope,
+);
+
+$fa-brand-icons: (
+  "github": $fa-var-github,
+);
+
 @import "~@fortawesome/fontawesome-free/scss/_mixins";
 @import "~@fortawesome/fontawesome-free/scss/_core";
-@import "~@fortawesome/fontawesome-free/scss/_larger";
-@import "~@fortawesome/fontawesome-free/scss/_fixed-width";
-@import "~@fortawesome/fontawesome-free/scss/_list";
-@import "~@fortawesome/fontawesome-free/scss/_bordered-pulled";
-@import "~@fortawesome/fontawesome-free/scss/_animated";
-@import "~@fortawesome/fontawesome-free/scss/_rotated-flipped";
-@import "~@fortawesome/fontawesome-free/scss/_stacked";
-
-.#{$fa-css-prefix}-envelope:before {
-  content: fa-content($fa-var-envelope);
-}
-
-.#{$fa-css-prefix}-github:before {
-  content: fa-content($fa-var-github);
-}
-
+@import "~@fortawesome/fontawesome-free/scss/_icons";
 @import "~@fortawesome/fontawesome-free/scss/_screen-reader";
 
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
