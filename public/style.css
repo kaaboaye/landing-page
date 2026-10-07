@@ -3,6 +3,7 @@
 
   --background-color: white;
   --text-color: black;
+  --secondary-text-color: #565656;
   --link-color: #1b6ca8;
   --mail-icon-color: #2083a4;
   --github-icon-color: #23292d;
@@ -12,6 +13,7 @@
   :root {
     --background-color: black;
     --text-color: white;
+    --secondary-text-color: #989898;
     --link-color: #9ad1fd;
     --mail-icon-color: #53afff;
     --github-icon-color: white;
@@ -41,6 +43,16 @@ h2 {
 
 p {
   font-size: 18px;
+}
+
+footer {
+  margin-top: 64px;
+
+  p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: var(--secondary-text-color);
+  }
 }
 
 a,
